@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Munchy Dungeon</string>
+    <string name="about">Über</string>
+    <string name="name">Name</string>
+    <string name="reset">Spiel zurücksetzen</string>
+    <string name="create">Spiel erstellen</string>
+    <string name="new_game">Neues Spiel starten</string>
+    <string name="battle_strength">Kampfstärke</string>
+    <string name="level">Stufe</string>
+    <string name="gear_level">Rüstung</string>
+    <string name="modifier">Modifikator</string>
+    <string name="next">Nächster</string>
+    <string name="just_started">Gerade begonnen.</string>
+    <string name="played">gespielt.</string>
+    <string name="time">Zeit:</string>
+    <string name="rate">Munchy Dungeon bewerten</string>
+    <string name="about_text">Munchy Dungeon ist eine kleine spielbegleitende App die das Level von Spielern in einem Spiel erlaubt. Munchy Dungeon wurde von Marcus Körner entwickelt. Weitere Informationen über den Entwickler gibt es unter den folgenden Links.</string>
+    <string name="show_play_time">Zeige gespielte Zeit</string>
+    <string name="reset_game_time">Gespielte Zeit zurücksetzen</string>
+
+</resources>

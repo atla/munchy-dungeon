@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp" >
+
+    <TextView
+        android:id="@+id/player_level"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="7"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#99CC00" />
+
+    <TextView
+        android:id="@+id/player_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-light"
+        android:text="PLAYER"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#666" />
+
+    <TextView
+        android:id="@+id/gear_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="5"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginRight="8dp"
+        android:textColor="#AA66CC" />
+
+
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:id="@+id/overall_level"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="15"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF4444" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="8dp" >
+
+    <TextView
+        android:id="@+id/player_level"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="10"
+        android:textColor="#99CC00"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/player_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="32dp"
+        android:text="PLAYER"
+        android:textColor="#eee"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:id="@+id/level_stack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/gear_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="5"
+            android:textColor="#AA66CC"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/overall_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="15"
+            android:textColor="#FF4444"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

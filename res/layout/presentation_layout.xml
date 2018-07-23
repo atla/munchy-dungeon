@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/presentation_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" >
+        
+             <TextView
+                    android:id="@+id/game_time"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="left"
+                    android:paddingLeft="32dp"
+                    android:paddingTop="32dp"
+                    android:textSize="18sp"
+                    android:textColor="#aaa" />
+             
+             
+             <TextView
+                    android:id="@+id/time"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="right"
+                    android:paddingRight="32dp"
+                    android:paddingTop="32dp"
+                    android:textSize="18sp"
+                    android:textColor="#aaa" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:gravity="center_vertical"
+        android:padding="16dp" >
+
+        <!-- <fragment -->
+        <!-- android:id="@+id/fragment1" -->
+        <!-- android:name="com.leihwelt.munchkin.list.MunchkinListView" -->
+        <!-- android:layout_width="500dp" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_margin="32dp" /> -->
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:layout_weight="2" >
+        </ListView>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="32dp"
+            android:background="#333" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="32dp" >
+
+            <LinearLayout
+                android:id="@+id/title_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/overall_level_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="bottom|right"
+                    android:text="1"
+                    android:textColor="#FF4444"
+                    android:textSize="90sp" />
+
+                <LinearLayout
+                    android:id="@+id/player_stack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp" >
+
+                    <TextView
+                        android:id="@+id/player_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="No Player Selected"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#f7f7f7"
+                        android:textSize="42sp" />
+
+                    <TextView
+                        android:id="@+id/gear_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="left"
+                        android:text="@string/battle_strength"
+                        android:textColor="#eeeeee"
+                        android:textAllCaps="true"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#333" />
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="128dp"
+                android:layout_marginTop="8dp" >
+
+                <TextView
+                    android:id="@+id/player_level_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="right"
+                    android:text="1"
+                    android:textColor="#99CC00"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/player_level"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="@string/level"
+                    android:textAllCaps="true"
+                    android:textColor="#eeeeee" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="128dp"
+                android:layout_marginTop="8dp" >
+
+                <TextView
+                    android:id="@+id/gear_level_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textColor="#AA66CC"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/gear_level"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="@string/gear_level"
+                    android:textAllCaps="true"
+                    android:textColor="#eeeeee" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="128dp"
+                android:layout_marginTop="8dp" >
+
+                <TextView
+                    android:id="@+id/modifier_level_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textColor="#FFBB33"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/gear_level"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="@string/modifier"
+                    android:textAllCaps="true"
+                    android:textColor="#eeeeee" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- <fragment -->
+        <!-- android:id="@+id/secondary_munchkin_fragment" -->
+        <!-- android:name="com.leihwelt.munchkin.MunchkinPresentationFragment" -->
+        <!-- android:layout_width="0dp" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_weight="1" -->
+        <!-- tools:layout="@layout/munchkin_fragment" /> -->
+
+    </LinearLayout>
+</RelativeLayout>

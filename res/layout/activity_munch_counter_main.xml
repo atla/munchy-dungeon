@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#f7f7f7"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/no_game_text"
+        android:fontFamily="sans-serif-light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Create a new Game."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/game_time"
+        android:fontFamily="sans-serif-light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:padding="4dp"
+        android:text="1h 32m"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        
+        tools:context=".MunchCounterMain" >
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ccc" />
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center_vertical" >
+
+        <fragment
+            android:id="@+id/fragment1"
+            android:name="com.leihwelt.munchyd.list.MunchkinListView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout="@layout/munchkin_list_item" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eee" />
+
+        <Button
+            android:id="@+id/next_player"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_action_arrow_right"
+            android:fontFamily="sans-serif-light"
+            android:padding="8dp"
+            android:text="Next" />
+    </LinearLayout>
+
+</LinearLayout>

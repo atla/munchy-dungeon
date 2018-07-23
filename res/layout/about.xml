@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_phone" />
+
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="false"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/title_label"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center|left"
+                android:shadowColor="#000000"
+                android:shadowRadius="8"
+                android:text="Munchy Dungeon"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#eee"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/disclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/about_text"
+        android:textColor="#333" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <Button
+            android:id="@+id/twitter_clicked"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_action_twitter"
+            android:fontFamily="sans-serif-light"
+            android:onClick="twitterClicked"
+            android:padding="8dp"
+            android:text="Twitter" />
+
+        <Button
+            android:id="@+id/googlep_clicked"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_action_gplus"
+            android:fontFamily="sans-serif-light"
+            android:onClick="googleClicked"
+            android:padding="8dp"
+            android:text="Google+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+         >
+
+        <Button
+            android:id="@+id/googlep_clicked"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_action_star_5"
+            android:fontFamily="sans-serif-light"
+            android:onClick="rateClicked"
+            android:padding="8dp"
+            android:text="@string/rate" />
+    </LinearLayout>
+
+<!--     <TextView -->
+<!--         android:id="@+id/disclaimer" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_gravity="bottom" -->
+<!--         android:layout_margin="16dp" -->
+<!--         android:fontFamily="sans-serif-light" -->
+<!--         android:text="Munchkin is a trademark by Steve Jackson. You can find more information at http://www.worldofmunchkin.com/game/" -->
+<!--         android:textAppearance="?android:attr/textAppearanceSmall" -->
+<!--         android:textColor="#666" /> -->
+
+</LinearLayout>

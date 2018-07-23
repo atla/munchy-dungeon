@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.leihwelt.munchyd"
+    android:versionCode="6"
+    android:versionName="1.0.6" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="L" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.leihwelt.munchyd.MunchCounterMain"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.leihwelt.munchyd.About"
+            android:theme="@android:style/Theme.Holo.Light.DialogWhenLarge.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>

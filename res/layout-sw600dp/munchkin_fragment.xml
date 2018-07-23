@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="64dp"
+    android:background="@drawable/card"
+    android:orientation="vertical"
+    android:padding="32dp" >
+
+    <LinearLayout
+        android:id="@+id/title_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+               <Button
+            android:id="@+id/gender"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="M"
+            android:textColor="#888"
+            android:textSize="36sp" />
+        <TextView
+            android:id="@+id/player_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marcus"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif-light"
+            android:textSize="36sp" />
+        
+        
+        <TextView
+            android:id="@+id/gear_level"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/battle_strength"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/overall_level_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="34"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="@dimen/padding"
+            
+            android:textColor="#FF4444"
+            android:textSize="74sp" />
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#eee" />
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" >
+
+        <TextView
+            android:id="@+id/player_level"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/level"
+            android:textAllCaps="true"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/player_level_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="10"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#99CC00"
+            android:textSize="48sp" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_marginRight="@dimen/padding"
+            android:background="#eee" />
+
+        <ImageButton
+            android:id="@+id/decrease_level"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_action_arrow_bottom" />
+
+        <ImageButton
+            android:id="@+id/increase_level"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_action_arrow_top" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" >
+
+        <TextView
+            android:id="@+id/gear_level"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:text="@string/gear_level"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/gear_level_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="23"
+            android:textColor="#AA66CC"
+            android:fontFamily="sans-serif-light"
+            android:textSize="48sp" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_marginRight="@dimen/padding"
+            android:background="#eee" />
+
+        <ImageButton
+            android:id="@+id/decrease_gear"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_action_arrow_bottom" />
+
+        <ImageButton
+            android:id="@+id/increase_gear"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_action_arrow_top" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" >
+
+        <TextView
+            android:id="@+id/gear_level"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:text="@string/modifier"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/modifier_level_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:fontFamily="sans-serif-light"
+            android:text="7"
+            android:textColor="#FFBB33"
+            android:textSize="48sp" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_marginRight="@dimen/padding"
+            android:background="#eee" />
+
+        <ImageButton
+            android:id="@+id/decrease_modifier"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_action_arrow_bottom" />
+
+        <ImageButton
+            android:id="@+id/increase_modifier"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_action_arrow_top" />
+    </LinearLayout>
+
+</LinearLayout>

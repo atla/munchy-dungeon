@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Munchy Dungeon</string>
+    <string name="about">About</string>
+    <string name="reset">Reset Game</string>
+    <string name="name">Name</string>
+    <string name="create">Create Game</string>
+    <string name="new_game">Start New Game</string>
+    <string name="battle_strength">Battle Strength</string>
+    <string name="level">Level</string>
+    <string name="gear_level">Gear</string>
+    <string name="modifier">Modifier</string>
+    <string name="next">Next</string>
+    <string name="just_started">Just started.</string>
+    <string name="played">played.</string>
+    <string name="time">time:</string>
+    <string name="rate">Rate Munchy Dungeon</string>
+    <string name="about_text">Munchy Dungeon is a small companion app that keeps track of all players during your game. Munchy Dungeon was developed by Marcus Körner. More Information about the developer can be found below.</string>
+    <string name="show_play_time">Show Played Time</string>
+    <string name="reset_game_time">Reset Played Time</string>
+    <string name="gender_male">♂</string>
+    <string name="gender_female">♀</string>
+
+</resources>
